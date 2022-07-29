@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,300&display=swap');
+*{
+    color: white;
+    font-family:'Rubik', sans-serif;
+}
+
+bady, html {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background: rgb(7,16,54);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.959) 15%, rgb(37, 8, 31) 44%, rgba(42, 0, 54, 0.863) 100%); 
+}img {
+    width: 300px;
+    height: 300px;
+}
+
+#oculta2{
+    display: none;
+}
+.gg-play-button {
+    box-sizing: border-box;
+   
+    display: block;
+    transform: scale(var(--ggs,4));
+    width: 22px;
+    height: 23px;
+}
+.gg-play-pause {
+    box-sizing: border-box;
+  
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 28px;
+    height: 39px;
+    border-left: 10px solid;
+    border-right: 10px solid;
+  }
+.play{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+}
+.gg:hover{
+    color: rgb(70, 35, 35);
+     cursor: pointer;
+}
+.gg-play-button:hover{
+
+  color: rgb(70, 35, 35);
+   background-color: rgba(231, 230, 230, 0.37);
+  /* width: 10px;
+  height: 10px;*/
+   border-radius: 50%;  
+  transition-duration: 0.6ms;
+  cursor: pointer;
+}
+.tempo{
+    justify-content: space-between;
+    display: flex;
+}
+h2{
+   margin-bottom: 5px;
+}
+.descricao{
+    margin-top: 25px;
+}
+.duracao ,.play{
+    margin-top: 23px;
+}
+.barra{
+    display: flex;
+    width: 300px;
+    height: 6px;
+    border: 1px solid rgba(185, 127, 206, 0.781);
+    border-radius: 22px;
+    position: absolute;
+    align-items: center;
+}progress{
+
+    height: 6px;
+   width: 0;
+   background-color: rgba(147, 131, 236, 0.295);
+   border-radius:20px ;
+   
+}
+.ponto{
+    position: relative;
+    margin-left: -9px;
+ 
+    width: 20px;
+    height: 20px;
+    border-radius:50% ;
+    background-color: #322258;
+  
+}
+.ponto:hover{
+    background-color:#563b97 ;
+    cursor: pointer;
+}
+.descricao u:hover{
+    color:#7878fc ;
+    cursor: pointer;
+}
