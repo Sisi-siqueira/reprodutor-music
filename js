@@ -3,19 +3,19 @@
 let playlist=[
     {
         titulo:"Ela vai voltar",
-        algum:"Transpiração Contínua Prolongada",
+        album:"Transpiração Contínua Prolongada",
         src:"musica/Charlie_Brown_Jr-Ela Vai Voltar.mp3",
         capa:"img/ela vai voltar.jpg"
     },
     {
         titulo:"Zóio de lula",
-        algum:"Transpiração Contínua Prolongada",
+        album:"Transpiração Contínua Prolongada",
         src:"musica/Charlie Brown Jr - Zóio de lula.mp3",
         capa:"img/zoio de lula.jpg"
     },
     {
         titulo:"Meu Novo Mundo",
-        algum:"La Familia 013",
+        album:"La Familia 013",
         src:"musica/Charlie_Brown_Jr-Meu novo mundo.mp3",
         capa:"img/meu novo mundo.jpg"
     }
@@ -24,7 +24,7 @@ let playlist=[
 //descrição
 
 let tituloMusic=document.querySelector(".descricao h2")
-let AlgunMusic=document.querySelector(".descricao  i")
+let AlbunMusic=document.querySelector(".descricao  i")
 let capaMusic=document.querySelector("img")
 let musica=document.querySelector('audio')
 let indice=0
@@ -63,7 +63,7 @@ function atualizacao(Index){
     musica.setAttribute('src',playlist[Index].titulo);
     musica.addEventListener('loadeddata',() =>{
         tituloMusic.textContent=musica[Index].titulo;
-        AlgunMusic.textContent=musica[Index].algum;
+        AlbunMusic.textContent=musica[Index].album;
         capaMusic.src=playlist[Index].capa
         duracaoMusic.textContent=segundosEmMinutos(Math.floor(musica.duration));
 
